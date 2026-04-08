@@ -54,3 +54,8 @@ UNION-based SQL injection via the id parameter.
 
 ## Author
 Imad Alvi
+
+---
+
+## Reference
+https://code-projects.org/simple-content-management-system-in-php-with-source-code/
